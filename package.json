@@ -1,0 +1,32 @@
+{
+  "name": "uploader",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "stmux -w always -e ERROR -m beep,system -- [ -t 'Client' 'huncwot client' .. -t 'Server' 'huncwot server' ]"
+  },
+  "dependencies": {
+    "huncwot": "0.52.0"
+  },
+  "@pika/web": {
+    "webDependencies": []
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "@pika/web": "^0.6.1",
+    "@wessberg/rollup-plugin-ts": "^1.2.6",
+    "chokidar": "^3.3.1",
+    "cross-env": "^6.0.3",
+    "node-pg-migrate": "^4.2.1",
+    "npm-check-updates": "^4.0.1",
+    "stmux": "^1.8.0",
+    "typescript": "^3.7.4",
+    "prettier": "^1.19.1",
+    "rollup-plugin-livereload": "^1.0.4",
+    "rollup-plugin-serve": "^1.0.1"
+  }
+}
